@@ -10,8 +10,12 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSArray* studentNames = @[@"EJ", @"Liz",@"Jared"];
+        studentNames = [studentNames arrayByAddingObject:@"Walt"];
+        int i = 0;
+        for(i = 0; i < [studentNames count]; i++){
+            NSLog([studentNames objectAtIndex: i]);
+        }
     }
     return 0;
 }
